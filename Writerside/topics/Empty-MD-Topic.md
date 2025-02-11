@@ -5,5 +5,6 @@ A full-stack application created to mimic the ticketing experience within ITSM c
 ## Technologies Used
 
 Languages: JavaScript 
-Frameworks: React | Node/Express
+Frameworks: React | Node/Express 
+Style: TailwindCSS
 
