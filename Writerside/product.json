@@ -1,7 +1,5 @@
 {
-  "name": "PORTFOLIO_PROJECTS",
-  "id": "portfolio_projects",
-  "output": {
-    "type": "webHelp"
-  }
+  "name": "portfolio_projects",
+  "title": "Portfolio Projects Documentation",
+  "description": "Documentation for my portfolio projects"
 }
