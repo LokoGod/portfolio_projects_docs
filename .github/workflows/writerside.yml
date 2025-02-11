@@ -1,34 +1,16 @@
-name: Deploy Writerside Docs to GitHub Pages
+name: Writerside Docs Build
 
-on:
-  push:
-    branches:
-      - main  # Change this if your branch is different
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Build Writerside documentation
+      - name: Run Writerside Action
         uses: JetBrains/writerside-github-action@v4
         with:
-          product-code: Writerside
-          output-dir: artifacts
-
-      - name: Deploy to GitHub Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: artifacts
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - name: Deploy GitHub Pages
-        uses: actions/deploy-pages@v4
+          instance: Writerside/hi
+          docker-version: 243.22562
