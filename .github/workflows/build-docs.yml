@@ -11,7 +11,7 @@ permissions:
   pages: write
 
 env:
-  INSTANCE: 'Writerside/hi'
+  INSTANCE: 'Writerside/portfolio_projects'
   DOCKER_VERSION: '243.22562'
   ALGOLIA_APP_NAME: 'NLAGB2LZHU'
   ALGOLIA_INDEX_NAME: 'MY_INDEX'
